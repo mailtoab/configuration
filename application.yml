@@ -4,8 +4,8 @@
 eureka:
   client:
     serviceUrl:
-      #defaultZone: http://localhost:8888/eureka #Enable for standalone
-      defaultZone: http://eureka-peer1:8001/eureka,http://eureka-peer2:8002/eureka #Enable for cluster
+      defaultZone: http://localhost:8888/eureka #Enable for standalone
+      #defaultZone: http://eureka-peer1:8001/eureka,http://eureka-peer2:8002/eureka #Enable for cluster
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true
